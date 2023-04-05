@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import LocationDetails from './LocationDetails';
-import getForecast from '../requests/getForecast';
-import ForecastSummaries from './ForecastSummaries';
-import ForecastDetails from './ForecastDetails';
+import React, { useState, useEffect } from "react";
+import LocationDetails from "./LocationDetails";
+import getForecast from "../requests/getForecast";
+import ForecastSummaries from "./ForecastSummaries";
+import ForecastDetails from "./ForecastDetails";
 
-import '../styles/App.css';
-import SearchForm from './SearchForm';
+import "../styles/App.css";
+import SearchForm from "./SearchForm";
 
 function App() {
   const [forecasts, setForecasts] = useState([]);
@@ -25,29 +25,31 @@ function App() {
   };
 
   const handleCitySearch = () => {
-    getForecast(
-      setSelectedDate,
-      setForecasts,
-      setLocation,
-    );
+    getForecast(setSelectedDate, setForecasts, setLocation, searchText);
   };
 
   return (
-    <div className="weather-app">
-      <LocationDetails
-        city={location.city}
-        country={location.country}
-      />
-      <SearchForm
-        searchText={searchText}
-        setSearchText={setSearchText}
-        onSubmit={handleCitySearch}
-      />
-      <ForecastSummaries
-        forecasts={forecasts}
-        onForecastSelect={handleForecastSelect}
-      />
-      {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
+    <div
+      style={{ backgroundImage: "url(/sunny.png)", height: "800px", backgroundSize: "cover" }}
+      className="weather-app"
+    >
+      <div className="location-details">
+        <LocationDetails city={location.city} country={location.country} />
+        <SearchForm
+          searchText={searchText}
+          setSearchText={setSearchText}
+          onSubmit={handleCitySearch}
+        />
+      </div>
+      <div>
+        <ForecastSummaries
+          forecasts={forecasts}
+          onForecastSelect={handleForecastSelect}
+        />
+        <div className="selected-forecast">
+          {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
+        </div>
+      </div>
     </div>
   );
 }
