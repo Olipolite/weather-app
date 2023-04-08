@@ -1,0 +1,10 @@
+.forecast-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forecast-summary__icon {
+    font-size: 35px;
+}
