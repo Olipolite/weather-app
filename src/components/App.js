@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div
-      style={{ backgroundImage: "url(/sunny.png)", height: "800px", backgroundSize: "cover" }}
+      style={{ backgroundImage: "url(/weather-app.png)", height: "750px", backgroundSize: "cover" }}
       className="weather-app"
     >
       <div className="location-details">
