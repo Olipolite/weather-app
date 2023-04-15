@@ -12,7 +12,7 @@ function ForecastSummary({
     <div className="forecast-summary" data-testid="forecast-summary">
       <div className="forecast-summary__date">{formattedDate}</div>
       <div className="forecast-summary__icon" data-testid="forecast-icon">
-        <WeatherIcon className="icon" name="owm" iconId={icon} />
+        <WeatherIcon name="owm" iconId={icon} />
       </div>
       <div className="forecast-summary__description">{description}</div>
       <div className="forecast-summary__temperature">

@@ -1,5 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import {
+  WiDirectionUp,
+  WiDirectionDown,
+  WiHumidity,
+  WiStrongWind,
+} from "react-icons/wi";
+import "../styles/ForecastDetails.css";
 
 function ForecastDetails({ forecast }) {
   const {
@@ -14,24 +21,28 @@ function ForecastDetails({ forecast }) {
         {formattedDate}
       </div>
       <div className="forecast-details__temperature">
+        <WiDirectionUp />
         {temperature.max}
         &deg;C
       </div>
       <div className="forecast-details__temperature">
+        <WiDirectionDown />
         {temperature.min}
         &deg;C
       </div>
       <div className="forecast-details__humidity">
+        <WiHumidity />
         {humidity}
         %
       </div>
       <div className="forecast-details__speed">
+        <WiStrongWind />
         {wind.speed}
         mph
       </div>
-      <div className="forecast-details__direction">
+      {/* <div className="forecast-details__direction">
         {wind.direction}
-      </div>
+      </div> */}
     </div>
   );
 }

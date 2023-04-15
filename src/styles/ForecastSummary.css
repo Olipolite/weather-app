@@ -5,6 +5,11 @@
     align-items: center;
 }
 
+.forecast-summary__date {
+    font-size: larger;
+    margin-bottom: 10px;
+}
+
 .forecast-summary__icon {
     font-size: 35px;
 }
