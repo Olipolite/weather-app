@@ -1,3 +1,10 @@
 .forecast-details {
-    font-size: 15px;
+display: flex;
+align-items: center;
+flex-direction: column;
+padding-bottom: 25px;
+background-size: cover;
+background: rgb(36, 30, 30);
+border-radius: 20px;
 }
+

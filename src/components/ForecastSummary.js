@@ -6,7 +6,11 @@ import WeatherIcon from "react-icons-weather";
 function ForecastSummary({
   date, temperature, description, icon, onSelect,
 }) {
-  const formattedDate = new Date(date).toDateString();
+  const formattedDate = new Date(date).toLocaleDateString("en-uk", {
+    weekday: "short",
+    day: "numeric",
+    month: "short",
+  });
 
   return (
     <div className="forecast-summary" data-testid="forecast-summary">
@@ -20,7 +24,7 @@ function ForecastSummary({
         &deg;C
       </div>
       <button type="button" onClick={() => onSelect(date)}>
-        More details
+        More
       </button>
     </div>
   );

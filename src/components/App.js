@@ -42,13 +42,13 @@ function App() {
         />
       </div>
       <div>
+        <div className="selected-forecast">
+          {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
+        </div>
         <ForecastSummaries
           forecasts={forecasts}
           onForecastSelect={handleForecastSelect}
         />
-        <div className="selected-forecast">
-          {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
-        </div>
       </div>
     </div>
   );

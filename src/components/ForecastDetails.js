@@ -13,7 +13,11 @@ function ForecastDetails({ forecast }) {
     temperature, date, humidity, wind,
   } = forecast;
 
-  const formattedDate = new Date(date).toDateString();
+  const formattedDate = new Date(date).toLocaleDateString("en-uk", {
+    weekday: "short",
+    day: "numeric",
+    month: "short",
+  });
 
   return (
     <div className="forecast-details">
@@ -21,7 +25,7 @@ function ForecastDetails({ forecast }) {
         {formattedDate}
       </div>
       <div className="forecast-details__temperature">
-        <WiDirectionUp />
+        <WiDirectionUp className="wind-direction__up" />
         {temperature.max}
         &deg;C
       </div>
