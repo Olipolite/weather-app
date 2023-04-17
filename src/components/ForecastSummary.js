@@ -15,15 +15,15 @@ function ForecastSummary({
   return (
     <div className="forecast-summary" data-testid="forecast-summary">
       <div className="forecast-summary__date">{formattedDate}</div>
+      <div className="forecast-summary__description">{description}</div>
       <div className="forecast-summary__icon" data-testid="forecast-icon">
         <WeatherIcon name="owm" iconId={icon} />
       </div>
-      <div className="forecast-summary__description">{description}</div>
       <div className="forecast-summary__temperature">
         {temperature.max}
         &deg;C
       </div>
-      <button type="button" onClick={() => onSelect(date)}>
+      <button className="forecast-summary__button" type="button" onClick={() => onSelect(date)}>
         More
       </button>
     </div>
