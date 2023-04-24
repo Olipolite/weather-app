@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { SlMagnifier } from "react-icons/sl";
+import { HiSearch } from "react-icons/hi";
 import "../styles/SearchForm.css";
 
 function SearchForm({ searchText, setSearchText, onSubmit }) {
@@ -10,7 +10,7 @@ function SearchForm({ searchText, setSearchText, onSubmit }) {
     <div className="search-form">
       <input className="search-input" type="text" onChange={handleInputChange} value={searchText} />
       <button className="search__button" type="submit" onClick={onSubmit}>
-        <SlMagnifier />
+        <HiSearch />
       </button>
     </div>
   );

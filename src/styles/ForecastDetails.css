@@ -1,9 +1,12 @@
 .forecast-details {
 display: flex;
-justify-content: center;
-flex-direction: row;
-padding-bottom: 25px;
+font-size: larger;
+align-items: center;
+flex-direction: column;
+padding-bottom: 35px;
 border-radius: 20px;
-border: 1px solid black;
 }
 
+#HiArrowUp {
+    padding-right: 10px;
+}

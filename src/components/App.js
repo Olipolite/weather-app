@@ -29,10 +29,7 @@ function App() {
   };
 
   return (
-    <div
-      style={{ backgroundImage: "url(/weather.jpg)", height: "750px", backgroundSize: "cover" }}
-      className="weather-app"
-    >
+    <div>
       <div className="location-details">
         <LocationDetails city={location.city} country={location.country} />
         <SearchForm

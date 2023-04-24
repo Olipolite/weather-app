@@ -3,14 +3,13 @@
     background-color: rgb(235, 227, 218);
     opacity: 0.8;
     border-radius: 10px;
-    padding: 2px 12px;
+    padding: 2px 14px;
     border: 2px;
+    width: 200px;
   }
   
   .search__button {
     background-color: transparent;
-    padding-top: 6px;
-    overflow: hidden;
     font-size: 25px;
     border: none;
     cursor: pointer;

@@ -1,7 +1,11 @@
 .weather-app {
-  margin: 0 20px;
+  display: grid;
+  grid-template-rows: 0.7fr 0.3fr 0.3fr 0.3fr;
+  margin: 30px 250px;
   border: 3px solid black;
   border-radius: 25px;
+  background: url(../styles/images/forest_mountains_sunset_cool_weather_minimalism.jpeg);
+  background-size: cover;
 }
 
 .location-details {
