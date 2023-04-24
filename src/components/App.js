@@ -29,7 +29,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="weather-app">
       <div className="location-details">
         <LocationDetails city={location.city} country={location.country} />
         <SearchForm
