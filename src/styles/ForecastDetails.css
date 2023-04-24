@@ -1,10 +1,27 @@
 .forecast-details {
 display: flex;
-font-size: larger;
 align-items: center;
 flex-direction: column;
+font-size: large;
 padding-bottom: 35px;
 border-radius: 20px;
+}
+
+.forecast-details__date {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.forecast-details__temperature {
+    margin-bottom: 5px;
+}
+
+.forecast-details__humidity {
+    margin-bottom: 5px;
+}
+
+.forecast-details__speed {
+    margin-bottom: 5px;
 }
 
 #HiArrowUp {

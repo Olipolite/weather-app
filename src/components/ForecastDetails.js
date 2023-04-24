@@ -13,7 +13,7 @@ function ForecastDetails({ forecast }) {
   } = forecast;
 
   const formattedDate = new Date(date).toLocaleDateString("en-uk", {
-    weekday: "short",
+    weekday: "long",
     day: "numeric",
     month: "short",
   });

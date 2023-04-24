@@ -8,7 +8,7 @@ function SearchForm({ searchText, setSearchText, onSubmit }) {
 
   return (
     <div className="search-form">
-      <input className="search-input" type="text" onChange={handleInputChange} value={searchText} />
+      <input className="search-input" type="text" placeholder="Enter city" onChange={handleInputChange} value={searchText} />
       <button className="search__button" type="submit" onClick={onSubmit}>
         <HiSearch />
       </button>

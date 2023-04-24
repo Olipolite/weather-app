@@ -1,6 +1,6 @@
-# :astronaut: React Weather-App
+# :sunny: :snowflake: React Weather-App
 
-This is a weather-app that I created using react.js. This was a assignment and a part of the front end module at <a href="https://www.commandshift.co/" target="_blank">Command Shift.</a>
+This is a weather-app that I created using react.js. This was an assignment and a part of the front end module at <a href="https://www.commandshift.co/" target="_blank">Command Shift.</a>
 
 ## Preview
 ![weather-app](/src/styles/images/weatherapp.png)
