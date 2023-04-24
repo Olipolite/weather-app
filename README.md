@@ -1,12 +1,9 @@
 # :astronaut: React Weather-App
 
-This is a search engine that I created using react.js. This was a practice tech test and is a part of the front end module at <a href="https://www.commandshift.co/" target="_blank">Command Shift.</a>
+This is a weather-app that I created using react.js. This was a assignment and a part of the front end module at <a href="https://www.commandshift.co/" target="_blank">Command Shift.</a>
 
-## Desktop
-![tech-test](/src/styles/images/weatherapp.png)
-
-## Mobile
-![tech-test-mobile](/src/images/tech-test-mobile.png)
+## Preview
+![weather-app](/src/styles/images/weatherapp.png)
 
 # Packages
 - <a href="https://www.npmjs.com/package/axios" target="_blank">Axios</a>
@@ -17,7 +14,6 @@ This is a search engine that I created using react.js. This was a practice tech 
 
 # Testing Libraries
 - <a href="https://jestjs.io/" target="_blank">Jest</a>
-- <a href="https://testing-library.com/docs/react-testing-library/intro/" target="_blank">React Testing Library</a>
 
 <br />
 <br />
@@ -37,14 +33,14 @@ This is a search engine that I created using react.js. This was a practice tech 
 
 # How To Use
 
-Enter any word into the search field ( I would suggest something regarding NASA or space ;) ) and you'll receive relevant images to your search query. 
+Enter a city in the UK into the search field and you'll receive information for the weather for the whole week. Click "More" to get a detailed information about the selected day, such as humidity and wind speed.
 
 <br />
 <br />
 
 # If I Had More Time
 
-Sadly all good things comes to an end. But these are some ideas I would've liked to add to the app.
+Here are some ideas I would've liked to add to the app if I had more time!
 
 - Improve the styling of the app, especially the look and the layout of the buttons.
 - Make the app more responsive to a wider selection of mobile devices.
